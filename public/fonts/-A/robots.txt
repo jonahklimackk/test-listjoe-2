@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /delete.php
+Disallow: /oto.php
+Disallow: /lastoffer.php
+Disallow: /lastoffer2.php
+Disallow: /bannerclick.php
+Disallow: /clicks.php
+Disallow: /textlinkclick2.php
+Disallow: /refmail.php
+Disallow: /admin
+Disallow: /login/newpass
+Disallow: /login/earn

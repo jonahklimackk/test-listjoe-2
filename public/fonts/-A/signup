@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>ListJoe v3 - Socially Profitable Email Marketing</title>
+        <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="/css/outside.css" type="text/css" />
+        <script type="text/javascript" src="/js/jquery.min.7.1.js"></script>
+        <script type="text/javascript" src="/js/outer.js"></script>
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-35191250-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=158655317520785";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="background"></div>
+        <!-- WRAPPER -->
+        <div class="main">
+            <div class="background"></div>
+            <div class="content">   
+                <a href="/"><img src="/img/logo.png" class="logo"/></a>
+                <a href="/login" style="z-index: 100000;"><img src="/img/outside/memlogin.png" class="memlogin"/></a>
+                <style>
+    .bbb{
+        background: lightPink;
+        text-shadow: white 0 1px;
+        padding: 10px;
+    }
+    .ques {
+        color:#f3f400;
+        cursor:pointer
+    }
+    .signup_error {
+        width: 474px;
+        margin: 20px auto;
+        border: 2px solid red;
+        background: #FFBDBD;
+        padding: 20px;
+        line-height: 1.5em;
+    }
+</style>
+<div class="headline5">
+    Your message will be sent to 1000 of our Listjoe members,<br/>people who are looking forward to getting your ad.
+</div>
+
+<div class="headline6">
+    Before we send your message, please tell us your<br/>
+    desired Listjoe username and an email address <br/>
+    that you will use to receive our ads: <span class="ques">(?)</span>
+</div>
+
+
+<form class="signup_form" method="post">
+    <div class="background"></div>
+    <div class="cont">
+        <div class="h">Join Now!</div>
+        <div class="line">
+            <label for="fname">First name:</label>
+            <input type="text" name="firstname" id="fname" autocomplete="off" value=""/>
+        </div>
+        <div class="line">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" autocomplete="off" value=""/>
+        </div>
+        <div class="line">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" autocomplete="off"/>
+        </div>
+        <div class="line">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" value=""/>
+        </div>
+        <input type="checkbox" name="agree" id="agree" style="margin-left: 96px;"/>
+        <label for="agree" style="width: 350px;font-size: 14px;">I agree to the ListJoe.com <a href="/terms" style="color: #F8EE76" target="_blank">Terms </a> and <a href="/privacy" style="color: #F8EE76" target="_blank">Privacy Policy</a></label>
+    </div>
+</form>
+
+<div style="text-align: center;padding-top: 16px;">
+    <div class="big_yellow_button" id="submit"><b style="padding: 0px 1px;">Send My Ad, Joe!</b><i></i></div>
+</div>
+
+<div class="headline4">
+    <p>
+        List Joe is an email marketing service, which means real people will receive your emails and read them.
+        However, when you sign up you also agree to receive emails that you can read and earn more advertising credits.
+        You should expect 20-30 emails a day, so we recommend using a special gmail address to handle the volume.
+        If you don't want to receive this volume of email then please do not join.
+        However, it is 100% risk free, there is an easy one-click unsubscribe button in every email.
+    </p>
+</div>
+
+
+<script>
+    $('.ques').click(function(){
+        scroll(0, 1000000);
+        $('.headline4').addClass('bbb')
+    })
+    
+    $('#submit').click(function(){
+        $('.form_error').remove()
+        if($('#agree:checked').size()==0){
+            alert('You have to agree with our Terms of Services');
+            return;
+        }
+        
+        empty=true;
+        $('input[type=text]').add('input[type=password]').each(function(){            
+            if($(this).val() != '') {
+                empty = false;
+            }
+        })
+            
+        if(empty){
+            alert('You have to fill the signup form');
+            return;
+        }
+        
+        full=true;
+        $('input[type=text]').add('input[type=password]').each(function(){            
+            if($(this).val() == '') {
+                name = $(this).attr('name');
+                addError(name,'Sorry, but you forgot to enter your ' + name);
+                full=false
+            }
+        })
+        
+        if(!full){
+            return;
+        }
+        
+        
+        username = $('[name=username]').val();        
+        $.get('/signup/check/name/username/value/' + username, function(data){        
+            if(data=='false'){
+                addError('username','Sorry, but such username already exists in our database');
+            } else {
+                email = $('[name=email]').val();
+                $.get('/signup/check/name/email/value/' + email, function(data){
+                    if(data=='false'){
+                        addError('email','Sorry, but such email already exists in our database');                        
+                    } else {
+                        $('.signup_form').submit();
+                    }
+                })
+            }
+        })
+        
+        
+    })
+</script>            </div>
+            <div class="buffer"></div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="background"></div>
+            <ul class="footer-menu">
+                <li><a href="/signup">Signup</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/terms">Terms of Use</a></li>
+                <li><a href="/testimonials">Testimonials</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

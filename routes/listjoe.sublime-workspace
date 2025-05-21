@@ -1,0 +1,234 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"prefer",
+				"Preferences: Settings"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jonah/listjoe-jetstream2/routes/web.php",
+		"/home/jonah/listjoe-jetstream2/resources/views/auth/register.blade.php",
+		"/home/jonah/listjoe-jetstream2/resources/views/dashboard.blade.php",
+		"/home/jonah/listjoe-jetstream2/config/jetstream.php",
+		"/home/jonah/listjoe-jetstream2/config/services.php",
+		"/home/jonah/listjoe-jetstream2/config/mail.php",
+		"/home/jonah/listjoe-jetstream2/resources/views/components/welcome.blade.php",
+		"/home/jonah/listjoe-jetstream2/resources/views/welcome.blade.php",
+		"/home/jonah/listjoe-jetstream2/resources/views/navigation-menu.blade.php",
+		"/home/jonah/listjoe-jetstream2/app/Models/User.php",
+		"/home/jonah/listjoe-jetstream2/app/Actions/Fortify/CreateNewUser.php",
+		"/home/jonah/listjoe-jetstream2/.env.example",
+		"/home/jonah/listjoe-jetstream2/database/migrations/2024_11_07_190733_make-analytics-table.php",
+		"/home/jonah/listjoe-jetstream2/database/migrations/2024_11_07_184048_add-username-to-users.php",
+		"/home/jonah/listjoe/vendor/symfony/var-dumper/Server/DumpServer.php",
+		"/home/jonah/listjoe-jetstream2/resources/views/listjoe.blade.php",
+		"/home/jonah/listjoe-jetstream2/.env",
+		"/home/jonah/listjoe/resources/views/listjoe.blade.php",
+		"/home/jonah/listjoe/routes/web.php",
+		"/home/jonah/listjoe2/.env.example",
+		"/home/jonah/listjoe2/app/Models/User.php",
+		"/home/jonah/listjoe2/.env",
+		"/home/jonah/listjoe2/composer.json",
+		"/home/jonah/listjoe/resources/js/app.js",
+		"/home/jonah/listjoe/composer.json",
+		"/home/jonah/listjoe2/resources/js/Pages/Auth/Login.vue",
+		"/home/jonah/listjoe2/routes/web.php",
+		"/home/jonah/listjoe2/resources/views/listjoe.blade.php"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 119.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "listjoe.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"app/Actions/Fortify/CreateNewUser.php"
+			],
+			[
+				"addus",
+				"database/migrations/2024_11_07_184048_add-username-to-users.php"
+			],
+			[
+				"adduse",
+				"database/migrations/2024_11_07_184048_add-username-to-users.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/listjoe.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 418.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

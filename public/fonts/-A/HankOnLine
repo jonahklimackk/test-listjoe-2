@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>ListJoe v3 - Socially Profitable Email Marketing</title>
+        <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="/css/outside.css" type="text/css" />
+        <script type="text/javascript" src="/js/jquery.min.7.1.js"></script>
+        <script type="text/javascript" src="/js/outer.js"></script>
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-35191250-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=158655317520785";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="background"></div>
+        <!-- WRAPPER -->
+        <div class="main">
+            <div class="background"></div>
+            <div class="content">   
+                <a href="/"><img src="/img/logo.png" class="logo"/></a>
+                <a href="/login" style="z-index: 100000;"><img src="/img/outside/memlogin.png" class="memlogin"/></a>
+                <style>
+    .logo {
+        left: 0;
+    }
+</style>
+<div class="headline">
+    Send your email to 1000 home-based business owners right now…
+</div>
+
+<div class="sing-login-frame">
+    <form class="sing-login_form form_active" method="post" action="/login" >
+        <div class="sing-member_login">Member Login</div>
+
+        <div class="main-content-login_form-line">
+            <div class="main-content-login_form-line-name">Username</div>
+            <input class="main-content-login_form-line-input" name="username"/>
+            <div class="form_error"><div class="rect"></div><div class="text">Invalid username</div></div>
+        </div>
+
+        <div class="main-content-login_form-line" >
+            <div class="sing-login-error">Invalid password</div>
+            <div class="main-content-login_form-line-name">Password</div>
+            <input type="password" class="main-content-login_form-line-input" name="password"/>
+            <div class="form_error"><div class="rect"></div><div class="text">Invalid username</div></div>
+        </div>
+
+        <div>
+            <input type="checkbox" id="agree" name="remember" value="1" class="sing-content-signup_form-radio_login"/>
+            <label for="agree" class="sing-content-signup_form-radio_label_login">Remember me</label>
+            <div class="small_yellow_button" style="margin-left: 56px;" id="submitLogin"><b style="padding: 0 37px;">Login</b><i></i></div>
+        </div>
+        <br/>
+		         <br/>
+        <a href="#" class="sing-login_forgot">Forgot Your Password?</a>
+        <a href="#" class="sing-login_resend">Resend Confirmations Emails</a>
+    </form>
+
+    <form class="sing-forgot_form" action="/login/forgot" method="post" style="display: none">
+        <div class="sing-arrow_back"></div>
+        <div class="sing-back">Back to member Login</div>
+
+        <div class="sing-member_login" style="margin-top: 51px">Forgot Your Password?</div>
+
+        <div class="main-content-login_form-line" style="margin: 0 auto 20px;width: 368px;">
+            <div class="main-content-login_form-line-name" style="width:100%;text-align: center;">
+                Please enter your email or username:
+            </div>
+            <input class="main-content-login_form-line-input" name="email" style="width: 346px;"/>
+            <div class="form_error" style="top:30px"><div class="rect"></div><div class="text">Invalid username</div></div>
+        </div>
+
+        <div class="small_yellow_button" style="margin-left: 123px;"><b style="padding: 0 37px;" id="submitForgot">Restore Password</b><i></i></div>
+    </form>
+
+    <form class="sing-resend_form" action="/login/resend" method="POST" style="display: none">        
+        <div class="sing-arrow_back"></div>
+        <div class="sing-back">
+            Back to member Login
+        </div>
+
+        <div class="sing-member_login" style="margin-top: 51px">Resend Confirmation Email</div>
+
+        <div class="main-content-login_form-line" style="margin-top: 43px;margin-left: 57px;">
+            <div class="main-content-login_form-line-name" style="width: 339px;text-align: center;">
+                Please enter your email or username:
+            </div>
+            <input class="main-content-login_form-line-input" name="resend_email" style="margin-top: 14px;margin-left: -13px;width: 346px;"/>
+            <div class="form_error" style="top:42px"><div class="rect"></div><div class="text">Invalid username</div></div>
+        </div>
+
+        <div class="small_yellow_button" style="margin-left: 156px;"><b style="padding: 0 37px;" id="submitResend">Resend</b><i></i></div>
+    </form>
+	
+</div>
+
+
+
+
+<script>
+    var opened_tab = 'sing-login_form';
+
+
+    
+    $('.sing-login_resend').click(function(){
+        $('.sing-login_form').fadeOut('fast',function(){
+            $('.sing-resend_form').fadeIn('fast')
+        })
+        opened_tab = 'sing-resend_form';
+        $('.form_error').hide();
+    })
+
+    $('.sing-login_forgot').click(function(){
+        $('.sing-login_form').fadeOut('fast',function(){
+            $('.sing-forgot_form').fadeIn('fast')
+        })
+        opened_tab = 'sing-forgot_form';
+        $('.form_error').hide();
+    })
+
+    $('.sing-arrow_back').add('.sing-back').click(function(){
+        $('.' + opened_tab).fadeOut('fast',function(){
+            $('.sing-login_form').fadeIn('fast')
+        })
+        $('.form_error').hide();
+    })
+
+    $('#submitResend').click(function(){
+        $('.sing-resend_form').submit()
+    })
+
+    $('#submitLogin').click(function(){
+        $('.sing-login_form').submit()
+    })
+
+    $('#submitForgot').click(function(){
+        $('.sing-forgot_form').submit()
+    })
+
+    $('.main-content-login_form-line-input').add('.main-content-login_form-line-input').keyup(function(i){
+        if ( i.keyCode == 13 ) {
+            $('.sing-' + opened_tab + '_form').submit()
+        }
+    })
+    $('.sing-login_form input').keyup(function(e){
+        if(e.keyCode == 13) {
+            $('.sing-login_form').submit()
+        }
+    })
+    
+</script>            </div>
+            <div class="buffer"></div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="background"></div>
+            <ul class="footer-menu">
+                <li><a href="/signup">Signup</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/terms">Terms of Use</a></li>
+                <li><a href="/testimonials">Testimonials</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

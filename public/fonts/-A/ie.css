@@ -1,0 +1,17 @@
+/*-------------------+
+|     IE7 styles     |
++-------------------*/
+
+.leftmenu .col1 > .content {border-radius: 3px;behavior: url(js/PIE.htc);}
+#userpanel, #logo a {border-radius: 5px;behavior: url(js/PIE.htc);}
+#userpanel img.avatar {border:3px solid rgba(0,0,0,.15);behavior: url(js/PIE.htc);}
+#userpanel .eventsnum {-pie-background:rgba(0,0,0,.33);border-radius: 3px;behavior: url(js/PIE.htc);}
+#sidemenu {-pie-background:url("../../img/adminlight.png") 0 0 no-repeat, rgba(0,0,0,.5) url("../../img/adminbg_texture.png") 0 0 repeat;border:1px solid rgba(0,0,0,.3);border-radius: 5px;behavior: url(js/PIE.htc);}
+
+
+
+.behavior {behavior: url(js/PIE.htc);}
+
+#wrapperbg {-pie-background:rgba(0,0,0,.1);behavior: url(js/PIE.htc);}
+/*nav.tabs ul li a:hover {-pie-background:rgba(255,255,255,0.2);border-radius: 5px;behavior: url(js/PIE.htc);}*/
+body.ie7, body.ie8 { overflow-x:hidden; }

@@ -1,0 +1,48 @@
+table.global_table {
+    margin: 16px auto;
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+}
+table.global_table>thead {
+    height: 34px;
+}
+table.global_table>thead th {
+    background: #EFF7B6;
+}
+table.global_table td, table.global_table th {
+    padding: 4px 9px 4px 9px;
+    vertical-align: middle;
+}
+table.global_table tbody tr {
+    border-bottom: 1px solid grey;
+}
+table.global_table .global_head_left_border, table.global_table .global_head_right_border, table.global_table .global_str_left_border, table.global_table .global_str_right_border {
+    width: 5px;
+    height: 34px;
+    padding: 0;
+}
+table.global_table .global_head_left_border {
+    background: url(/img/sprite_w5.png) 0px -921px;
+}
+table.global_table .global_head_right_border {
+    background: url(/img/sprite_w5.png) 0px -989px;
+}
+table.global_table .global_str_left_border {
+
+}
+table.global_table .global_str_right_border {
+
+}
+table.global_table>caption {
+    padding: 8px 0px;
+    margin-left: 8px;
+    text-align: left;
+    font-size: 15px;
+}
+.global_info_paragraph {
+    margin: 20px 0;
+    text-align: left;
+    font-size: 15px;
+    line-height: 17px;
+}
